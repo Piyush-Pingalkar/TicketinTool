@@ -10,7 +10,7 @@ app.set('views', __dirname + '/views')
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://piyush:piyush@123@ticket.sorypmh.mongodb.net/?retryWrites=true&w=majority&appName=ticket', {})
+mongoose.connect('mongodb+srv://piyush:piyush123@ticket.sorypmh.mongodb.net/?retryWrites=true&w=majority&appName=ticket', {})
     .then(db => console.log('DB is connected'))
     .catch(err => console.log(err));
 
