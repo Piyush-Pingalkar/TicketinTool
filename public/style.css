@@ -1,0 +1,297 @@
+ /* body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+.container {
+  max-width: 90%;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.mt-5 {
+  margin-top: 20px;
+}
+
+.p-5 {
+  padding: 20px;
+}
+
+.search-form {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.search-button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+} */
+
+
+/*
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  table-layout: fixed; /* Ensures fixed column widths 
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  overflow: hidden; /* Ensures text is clipped 
+  white-space: nowrap; /* Prevents text from wrapping 
+  text-overflow: ellipsis; /* Adds ellipsis for overflow text 
+}
+
+th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+.container {
+  max-width: 90%;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.mt-5 {
+  margin-top: 20px;
+}
+
+.p-5 {
+  padding: 20px;
+}
+
+.search-form {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.search-button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+/* Add specific widths for each column 
+th:nth-child(1), td:nth-child(1) { width: 10%; } /* ticketId 
+th:nth-child(2), td:nth-child(2) { width: 12%; } /* ClientCode 
+th:nth-child(3), td:nth-child(3) { width: 15%; } /* mobile 
+th:nth-child(4), td:nth-child(4) { width: 12%; } /* department 
+th:nth-child(5), td:nth-child(5) { width: 18%; } /* date 
+th:nth-child(6), td:nth-child(6) { width: 33%; }/* query
+ */
+
+ body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  white-space: nowrap; /* Prevents text from wrapping */
+  overflow: hidden; /* Ensures content does not overflow */
+  text-overflow: ellipsis; /* Adds ellipsis for overflow text */
+}
+
+th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+.container {
+  max-width: 90%;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.mt-5 {
+  margin-top: 20px;
+}
+
+.p-5 {
+  padding: 20px;
+}
+
+.search-form {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  width: 300px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.search-button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+.clear-button {
+  padding: 10px 15px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px; /* Adjust margin as needed */
+  cursor: pointer;
+}
+
+.clear-button:hover {
+  background-color: #c82333;
+}
+
+
+/* Add specific widths for each column */
+th:nth-child(1), td:nth-child(1) { width: 10%; } /* ticketId */
+th:nth-child(2), td:nth-child(2) { width: 15%; } /* ClientCode */
+th:nth-child(3), td:nth-child(3) { width: 15%; } /* mobile */
+th:nth-child(4), td:nth-child(4) { width: 15%; } /* department */
+th:nth-child(5), td:nth-child(5) { width: 15%; } /* date */
+th:nth-child(6), td:nth-child(6) { width: 30%; white-space: normal; } /* query */

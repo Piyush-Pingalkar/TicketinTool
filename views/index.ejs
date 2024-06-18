@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Items List</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+    <h1>ISSUE LIST</h1>
+    <div class="container mt-5 shadow-lg p-5">
+        <!-- Search Form -->
+        <form action="/" method="get" class="search-form">
+            <input type="text" name="search" placeholder="Search..." class="search-input">
+            <button type="submit" class="search-button">Search</button>
+            <button type="button" class="clear-button" onclick="window.location.href='/'">Clear</button>
+        </form>
+        <table border="1">  
+            <thead>
+                <tr>
+                    <th>Ticket-Id</th>
+                    <th>Client-Code</th>
+                    <th>Mobile.No</th>
+                    <th>Department</th>
+                    <th>Date</th>
+                    <th>Query</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% datas.forEach(data => { %>
+                    <tr>
+                        <td><%= data.ticketId %></td>
+                        <td><%= data.ClientCode %></td>
+                        <td><%= data.mobile %></td>
+                        <td><%= data.department %></td>
+                        <td><%= new Date(data.date).toLocaleString() %></td>
+                        <td><%= data.query %></td>
+                    </tr>
+                <% }); %>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
