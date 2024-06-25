@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Hardcoded admin credentials
         const adminUsername = "admin";
-        const adminPassword = "admin123";
+        const adminPassword = "password";
 
         if (username === adminUsername && password === adminPassword) {
             alert("Login successful!");
