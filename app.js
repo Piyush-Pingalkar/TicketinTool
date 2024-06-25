@@ -19,8 +19,9 @@ app.get('/', async (req, res) => {
    res.render('login')
 });
 
+
 // Define a route to render the data
-app.get('/adminpanel', async (req, res) => {
+app.get('/adminpanel', async(req, res) => {
     try {
         const searchQuery = req.query.search;
         let datas;
@@ -43,6 +44,8 @@ app.get('/adminpanel', async (req, res) => {
         res.status(500).send(err);
     }
 });
+
+
 
 // Start the server
 const PORT = process.env.PORT || 3000;

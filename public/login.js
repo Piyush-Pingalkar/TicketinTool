@@ -11,6 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
         const adminUsername = "admin";
         const adminPassword = "admin123";
 
+       localStorage.setItem("user","admin") ;
+       localStorage.setItem("password","admin123") ;
+
         if (username === adminUsername && password === adminPassword) {
             alert("Login successful!");
             // Redirect to the specified port
