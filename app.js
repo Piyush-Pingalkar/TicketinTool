@@ -23,7 +23,7 @@ app.get('/', async (req, res) => {
 // Define a route to render the data
 app.get('/adminpanel', async(req, res) => {
     try {
-        const searchQuery = req.query.search;
+     const searchQuery = req.query.search;
         let datas;
         if (searchQuery) {
             const regex = new RegExp(searchQuery, 'i'); // 'i' makes it case-insensitive
@@ -35,8 +35,7 @@ app.get('/adminpanel', async(req, res) => {
                     { department: regex },
                     { query: regex }
                 ]
-            });
-        } else {
+            });} else {
             datas = await ticket.find();
         }
         res.render('index', { datas });
@@ -52,5 +51,3 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
-
-

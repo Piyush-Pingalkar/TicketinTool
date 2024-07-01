@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Items List</title>
     <link rel="stylesheet" type="text/css" href="/style.css">
@@ -12,9 +13,10 @@
         <form action="/adminpanel" method="get" class="search-form">
             <input type="text" name="search" placeholder="Search..." class="search-input">
             <button type="submit" class="search-button">Search</button>
-            <button type="button" class="clear-button" onclick="window.location.href='https://ticketintool.onrender.com/adminpanel'">Clear</button>
+            <button type="button" class="clear-button"
+                onclick="window.location.href='https://ticketintool.onrender.com/adminpanel'">Clear</button>
         </form>
-        <table border="1">  
+        <table border="1">
             <thead>
                 <tr>
                     <th>Ticket-Id</th>
@@ -26,18 +28,37 @@
                 </tr>
             </thead>
             <tbody>
-                <% datas.forEach(data => { %>
+                <% datas.forEach(data=> { %>
                     <tr>
-                        <td><%= data.ticketId %></td>
-                        <td><%= data.ClientCode %></td>
-                        <td><%= data.mobile %></td>
-                        <td><%= data.department %></td>
-                        <td><%= new Date(data.date).toLocaleString() %></td>
-                        <td><%= data.query %></td>
+                        <td>
+                            <%= data.ticketId %>
+                        </td>
+                        <td>
+                            <%= data.ClientCode %>
+                        </td>
+                        <td>
+                            <%= data.mobile %>
+                        </td>
+                        <td>
+                            <%= data.department %>
+                        </td>
+                        <td>
+                            <%= new Date(data.date).toLocaleString() %>
+                        </td>
+                        <td>
+                            <%= data.query %>
+                        </td>
                     </tr>
-                <% }); %>
+                    <% }); %>
             </tbody>
         </table>
     </div>
 </body>
+<script> var x = localStorage.getItem("user");
+    console.log(x)
+    if (!x) {
+        window.location.href = '/'
+    }
+</script>
+
 </html>
